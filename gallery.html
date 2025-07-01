@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>asdfsa | Gallery</title>
+            <link rel="stylesheet" href="css/base.css" />
+            <link rel="stylesheet" href="css/gallery.css" />
+            </head>
+            <body>
+            <header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <a href="index.html" class="logo">asdfsa</a>
+      
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      
+      <nav class="main-nav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+            <main class="gallery-page">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>asdf Showcase</h1>
+      <p class="subhead">Where innovation meets exceptional design</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filter -->
+  <section class="gallery-filter">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="renovation">Renovation</button>
+      <button class="filter-btn" data-filter="sustainable">Sustainable</button>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="gallery-grid">
+    <div class="grid-container">
+      <!-- Project 1 -->
+      <a href="#" class="grid-item residential" data-project="1">
+        <img src="images/gallery1.jpg" alt="Modern residential complex">
+        <div class="project-overlay">
+          <h3>Hillside Residence</h3>
+          <p>Contemporary home with panoramic views</p>
+        </div>
+      </a>
+      
+      <!-- Project 2 -->
+      <a href="#" class="grid-item commercial" data-project="2">
+        <img src="images/gallery2.jpg" alt="Commercial office building">
+        <div class="project-overlay">
+          <h3>Urban Office Tower</h3>
+          <p>LEED-certified commercial space</p>
+        </div>
+      </a>
+      
+      <!-- 10 more projects following same pattern -->
+      <!-- Project 3 -->
+      <a href="#" class="grid-item renovation" data-project="3">
+        <img src="images/gallery3.jpg" alt="Historic building renovation">
+        <div class="project-overlay">
+          <h3>Heritage Restoration</h3>
+          <p>Preserving architectural legacy</p>
+        </div>
+      </a>
+      
+      <!-- Project 4 -->
+      <a href="#" class="grid-item sustainable" data-project="4">
+        <img src="images/gallery4.jpg" alt="Eco-friendly home">
+        <div class="project-overlay">
+          <h3>Green Living Home</h3>
+          <p>Net-zero energy residence</p>
+        </div>
+      </a>
+      
+      <!-- Project 5 -->
+      <a href="#" class="grid-item residential" data-project="5">
+        <img src="images/gallery5.jpg" alt="Luxury penthouse">
+        <div class="project-overlay">
+          <h3>Skyline Penthouse</h3>
+          <p>Urban luxury redefined</p>
+        </div>
+      </a>
+      
+      <!-- Project 6 -->
+      <a href="#" class="grid-item commercial" data-project="6">
+        <img src="images/gallery6.jpg" alt="Retail complex">
+        <div class="project-overlay">
+          <h3>Riverfront Retail</h3>
+          <p>Mixed-use development</p>
+        </div>
+      </a>
+      
+      <!-- Project 7 -->
+      <a href="#" class="grid-item renovation" data-project="7">
+        <img src="images/gallery7.jpg" alt="Facade restoration">
+        <div class="project-overlay">
+          <h3>Facade Revival</h3>
+          <p>Historical accuracy meets modern function</p>
+        </div>
+      </a>
+      
+      <!-- Project 8 -->
+      <a href="#" class="grid-item sustainable" data-project="8">
+        <img src="images/gallery8.jpg" alt="Solar-powered home">
+        <div class="project-overlay">
+          <h3>Solar Residence</h3>
+          <p>Energy independent living</p>
+        </div>
+      </a>
+      
+      <!-- Project 9 -->
+      <a href="#" class="grid-item residential" data-project="9">
+        <img src="images/gallery9.jpg" alt="Suburban home">
+        <div class="project-overlay">
+          <h3>Family Haven</h3>
+          <p>Modern suburban living</p>
+        </div>
+      </a>
+      
+      <!-- Project 10 -->
+      <a href="#" class="grid-item commercial" data-project="10">
+        <img src="images/gallery10.jpg" alt="Hotel lobby">
+        <div class="project-overlay">
+          <h3>Boutique Hotel</h3>
+          <p>Luxury hospitality design</p>
+        </div>
+      </a>
+      
+      <!-- Project 11 -->
+      <a href="#" class="grid-item renovation" data-project="11">
+        <img src="images/gallery11.jpg" alt="Interior renovation">
+        <div class="project-overlay">
+          <h3>Loft Conversion</h3>
+          <p>Industrial to residential transformation</p>
+        </div>
+      </a>
+      
+      <!-- Project 12 -->
+      <a href="#" class="grid-item sustainable" data-project="12">
+        <img src="images/gallery12.jpg" alt="Green roof">
+        <div class="project-overlay">
+          <h3>Urban Oasis</h3>
+          <p>Green roof community space</p>
+        </div>
+      </a>
+    </div>
+    
+    <button class="load-more">Load More Projects</button>
+  </section>
+
+  <!-- Project Modal (Hidden by default) -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-body">
+        <img src="" alt="" class="modal-image">
+        <div class="modal-text">
+          <h2 class="modal-title"></h2>
+          <p class="modal-description"></p>
+          <div class="modal-details">
+            <p><strong>Location:</strong> <span class="modal-location"></span></p>
+            <p><strong>Year:</strong> <span class="modal-year"></span></p>
+            <p><strong>Size:</strong> <span class="modal-size"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>Trusted by Industry Leaders</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <div class="client-logo">
+          <i class="ph ph-buildings"></i>
+        </div>
+        <blockquote>
+          "asdfsa delivered beyond our expectations with their innovative approach to sustainable design."
+        </blockquote>
+        <p class="client-name">— Global Development Corp</p>
+      </div>
+      
+      <div class="testimonial">
+        <div class="client-logo">
+          <i class="ph ph-house"></i>
+        </div>
+        <blockquote>
+          "The attention to detail in our residential project was remarkable. Truly exceptional work."
+        </blockquote>
+        <p class="client-name">— Luxury Living Partners</p>
+      </div>
+      
+      <div class="testimonial">
+        <div class="client-logo">
+          <i class="ph ph-tree"></i>
+        </div>
+        <blockquote>
+          "Their eco-conscious designs helped us achieve our sustainability goals without compromising on aesthetics."
+        </blockquote>
+        <p class="client-name">— Green Future Initiatives</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Ready to bring your vision to life?</h2>
+      <p>Our team is ready to discuss your next project and how we can help make it exceptional.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">Get a Quote</a>
+        <a href="#" class="btn btn-secondary">View Our Process</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- External Resources -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/gallery.css">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<script src="js/base.js"></script>
+<script src="js/gallery.js"></script>
+
+            <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <a href="index.html" class="logo">asdfsa</a>
+      </div>
+      
+      <div class="footer-links">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
+        <ul class="social-links">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-legal">
+        <p class="copyright">&copy; 2023 asdfsa. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+            <script src="js/base.js"></script>
+            <script src="js/gallery.js"></script>
+            </body>
+            </html>
+            
